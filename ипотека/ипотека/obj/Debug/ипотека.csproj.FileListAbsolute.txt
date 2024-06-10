@@ -1,0 +1,15 @@
+C:\Users\Диана\Documents\прога\ипотека\ипотека\bin\Debug\ипотека.exe.config
+C:\Users\Диана\Documents\прога\ипотека\ипотека\bin\Debug\ипотека.exe
+C:\Users\Диана\Documents\прога\ипотека\ипотека\bin\Debug\ипотека.pdb
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\ипотека.csproj.AssemblyReference.cache
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\MainWindow.g.cs
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\App.g.cs
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\ипотека_MarkupCompile.cache
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\ипотека_MarkupCompile.lref
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\MainWindow.baml
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\ипотека.g.resources
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\ипотека.Properties.Resources.resources
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\ипотека.csproj.GenerateResource.cache
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\ипотека.csproj.CoreCompileInputs.cache
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\ипотека.exe
+C:\Users\Диана\Documents\прога\ипотека\ипотека\obj\Debug\ипотека.pdb

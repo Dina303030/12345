@@ -1,0 +1,84 @@
+﻿<Window x:Class="ипотека.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ипотека"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="475" Width="800" ResizeMode="NoResize">
+    <Grid Background="#FFFF8B8B" Margin="0,0,0,-16">
+        <Grid RenderTransformOrigin="0.5,0.5" Margin="7,3,411,187">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.171"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+        </Grid>
+        <Grid RenderTransformOrigin="0.5,0.5" Margin="407,3,0,187">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.171"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <TextBlock HorizontalAlignment="Left" Margin="22,53,0,0" TextWrapping="Wrap" Text="Дата начала платежей:" VerticalAlignment="Top" FontSize="18" FontFamily="Californian FB"/>
+            <TextBlock HorizontalAlignment="Left" Margin="22,181,0,0" TextWrapping="Wrap" Text="Переплата:" VerticalAlignment="Top" FontSize="18" FontFamily="Californian FB"/>
+            <TextBlock HorizontalAlignment="Left" Margin="22,148,0,0" TextWrapping="Wrap" Text="Сумма кредита:" VerticalAlignment="Top" FontSize="18" FontFamily="Californian FB"/>
+            <TextBlock HorizontalAlignment="Left" Margin="22,117,0,0" TextWrapping="Wrap" Text="Первоначальный взнос:" VerticalAlignment="Top" FontSize="18" FontFamily="Californian FB"/>
+            <TextBlock HorizontalAlignment="Left" Margin="22,85,0,0" TextWrapping="Wrap" Text="Дата окончания платежей:" VerticalAlignment="Top" FontSize="18" FontFamily="Californian FB"/>
+            <TextBox x:Name="summa" HorizontalAlignment="Left" Margin="262,151,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Background="#FFECC2C2"/>
+            <TextBox x:Name="pvznos" HorizontalAlignment="Left" Margin="262,122,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Background="#FFECC2C2" RenderTransformOrigin="0.5,0.5">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-0.023"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.004"/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+            <TextBox x:Name="pereplata" HorizontalAlignment="Left" Margin="262,182,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Background="#FFECC2C2"/>
+            <Button x:Name="vihod" Content="Выход" HorizontalAlignment="Left" Margin="296,3,0,0" VerticalAlignment="Top" Height="31" Width="81" FontFamily="Candara" FontSize="16" Background="#FFFFB3B3" Click="vihod_Click"/>
+            <TextBox x:Name="data" HorizontalAlignment="Left" Margin="263,88,0,0" VerticalAlignment="Top" Width="119" Background="#FFECC2C2"/>
+            <TextBox x:Name="nach" HorizontalAlignment="Left" Margin="264,54,0,0" VerticalAlignment="Top" Width="116" Background="#FFECC2C2"/>
+            <Label Content="Расчёты" HorizontalAlignment="Left" Margin="154,17,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Californian FB"/>
+        </Grid>
+        <Grid RenderTransformOrigin="0.5,0.5" Margin="0,3,397,187" HorizontalAlignment="Right" Width="398">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.171"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <TextBox x:Name="cena" HorizontalAlignment="Left" Margin="262,56,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Background="#FFECC2C2"/>
+            <TextBlock HorizontalAlignment="Left" Margin="22,53,0,0" TextWrapping="Wrap" Text="Цена недвижимости (руб)" VerticalAlignment="Top" FontSize="18" FontFamily="Californian FB"/>
+            <TextBlock HorizontalAlignment="Left" Margin="22,88,0,0" TextWrapping="Wrap" Text="Срок кредитования (лет)" VerticalAlignment="Top" FontSize="18" FontFamily="Californian FB"/>
+            <TextBlock HorizontalAlignment="Left" Margin="22,120,0,0" TextWrapping="Wrap" Text="Ставка по ипотеке (%)" VerticalAlignment="Top" FontFamily="Californian FB" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="21,154,0,0" TextWrapping="Wrap" Text="Первоначальный взнос (%)" VerticalAlignment="Top" FontFamily="Californian FB" FontSize="18"/>
+            <TextBox x:Name="stavka" HorizontalAlignment="Left" Margin="262,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFECC2C2"/>
+            <TextBox x:Name="srok" HorizontalAlignment="Left" Margin="263,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFECC2C2"/>
+            <TextBox x:Name="vznos" HorizontalAlignment="Left" Margin="262,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFECC2C2"/>
+            <Button x:Name="raschitat" Content="Расчитать" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Height="34" Width="126" FontSize="16" FontFamily="Candara" RenderTransformOrigin="0.02,0" SnapsToDevicePixels="True" Background="#FFFFB3B3" Click="raschitat_Click"/>
+            <Label Content="Входные данные" HorizontalAlignment="Left" Margin="95,13,0,0" VerticalAlignment="Top" FontFamily="Californian FB" FontSize="22"/>
+        </Grid>
+        <Label Content="Ипотечный калькулятор" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22" FontFamily="Arial" Background="#FFFF8B8B" Foreground="#FFEF0042"/>
+        <DataGrid x:Name="dgv" HorizontalAlignment="Center" Height="178" Margin="0,246,0,0" VerticalAlignment="Top" Width="780" SelectionChanged="DataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№" Binding="{Binding Number}"/>
+                <DataGridTextColumn Header="Месяц" Binding="{Binding MonthYear}"/>
+                <DataGridTextColumn Header="Платёж" Binding="{Binding Payment}"/>
+                <DataGridTextColumn Header="Проценты" Binding="{Binding Interest}"/>
+                <DataGridTextColumn Header="Основной долг" Binding="{Binding Principal}"/>
+                <DataGridTextColumn Header="Остаток долга" Binding="{Binding Balance}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
